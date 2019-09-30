@@ -70,13 +70,6 @@ int main(){
             start++;
         }
 
-
-        /*cout<<"NEG_FINAL_IDX ="<<neg_final_idx<<"\n";
-        for(int i=0; i<size; i++){
-            cout<<arr[i]<<" ";
-        }
-        cout<<endl;*/
-
         //Now the positive array lies from neg_final_idx to end
         for(int i=neg_final_idx; i<size; i++){
             int actual_idx = i;
@@ -85,14 +78,6 @@ int main(){
                 arr[item] *= -1;
         }
         int flag=0;
-
-
-        /*for(int i=0; i<size; i++){
-            cout<<arr[i]<<" ";
-        }
-        cout<<endl;
-        */
-
         for(int i=0; i<size; i++){
             if(arr[i]>0 && flag==0){
                 cout<<i-neg_final_idx+1<<endl;
